@@ -1,39 +1,34 @@
-# SplunkLearning
+# Splunk Learning
 
-I just access it via imreallynotbatman.com
+Access the Splunk environment via [https://splunk.samsclass.info](https://splunk.samsclass.info), hosted by Sam.
 
-need to know what data u had.
+To understand the available data, it's crucial to explore the Search & Reporting functionality within Splunk.
 
-most important thing to investigate in splunk is the search & Reporting
+One of the most valuable aspects is the use of sourcetypes, especially when utilizing add-ons for Windows logs. These add-ons provide simplified information extracted from Wineventlog.
 
-the most usefull is sourcetypes.
-addon for log windows. much more simple info from wineventlog
+Here are some key sourcetypes and their corresponding sources:
 
-fgt stand for log from fortigate
+- **fgt**: Fortigate logs
+- **iis**: Microsoft web server logs
+- **syslog**: Logs from the Splunk server itself
 
-iis is for microsft webserver
+When searching in Splunk, the `index="botsv1"` term signifies a specific location.
 
-syslog for the splunk server itself
+The following images display the types of data available, along with their associated hosts:
 
-index="botsv1" stand for location
-
-
-below also show the type of data we have and its host.
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/b4257874-08da-4147-a3b2-a36a0cdd482d)
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/1143655b-b759-4b48-9bab-9147f3201208)
-
-
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/9dd723da-46d7-4703-acfe-d81373fd25fa)
-
-
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/664badb8-c266-4a40-9852-a75922417bea)
 
-## using below command and we will check few log to find out.
-`` sourcetype="stream:http" imreallynotbatman.com
+To investigate further, you can use the following command and check a few logs:
 
-bassically it mean that the 40.80.148.42	is performing web vulnerablity on imnotreallyabatman.com 192.168.250.70		
-usually web vulnerability scanner will determine in it header it is performicne the activity.
+```bash
+sourcetype="stream:http" imreallynotbatman.com
+```
+
+In essence, this command reveals that IP address 40.80.148.42 is performing a web vulnerability scan on imnotreallyabatman.com (hosted at 192.168.250.70). Web vulnerability scanners often indicate their activity in the header.
+
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/7db03dbc-6ec1-487e-bbd9-e44b6f72efa1)
 
-if we show it in raw text
-now we identified that attacker is 40.80.148.42 while the webserver imnotreallyabatman is 192.168.250.70
+Examining the raw text, we identify the attacker as 40.80.148.42, targeting the web server imnotreallyabatman at 192.168.250.70.
