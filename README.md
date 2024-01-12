@@ -11,7 +11,8 @@ Here are some key sourcetypes and their corresponding sources:
 - **fgt**: Fortigate logs
 - **iis**: Microsoft web server logs
 - **syslog**: Logs from the Splunk server itself
-
+- **suricatar**: alert from the intrusion detection system
+- 
 When searching in Splunk, the `index="botsv1"` term signifies a specific location.
 
 The following images display the types of data available, along with their associated hosts:
