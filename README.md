@@ -17,6 +17,8 @@ syslog for the splunk server itself
 
 index="botsv1" stand for location
 
+
+below also show the type of data we have and its host.
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/b4257874-08da-4147-a3b2-a36a0cdd482d)
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/1143655b-b759-4b48-9bab-9147f3201208)
 
