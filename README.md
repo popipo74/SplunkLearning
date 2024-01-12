@@ -1,6 +1,6 @@
 # Splunk Learning
 
-Access the Splunk environment via [https://splunk.samsclass.info](https://splunk.samsclass.info), hosted by Sam.
+Access the Splunk environment via [https://splunk.samsclass.info](https://splunk.samsclass.info), hosted by Sam https://samsclass.info/50/proj/botsv1.htm.
 
 To understand the available data, it's crucial to explore the Search & Reporting functionality within Splunk.
 
@@ -27,6 +27,8 @@ The following images display the types of data available, along with their assoc
 
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/b4257874-08da-4147-a3b2-a36a0cdd482d)
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/1143655b-b759-4b48-9bab-9147f3201208)
+
+below is known as field, it is 
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/9dd723da-46d7-4703-acfe-d81373fd25fa)
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/664badb8-c266-4a40-9852-a75922417bea)
 
@@ -42,5 +44,9 @@ In essence, this command reveals that IP address 40.80.148.42 is performing a we
 
 Examining the raw text, we identify the attacker as 40.80.148.42, targeting the web server imnotreallyabatman at 192.168.250.70.
 
-based on the event happening we can make sure that imreallynotbatman.com is a webserver and it is using Joomla application and performing web vulnerability scanning.
+based on the event happening we can make sure that imreallynotbatman.com is a webserver and it is using Joomla application and performing acunetix web vulnerability scanning.
+usually the software will mark on the src_headers to shown itself.
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/bae96ba9-b3b7-43a7-a013-f7677fe2f0b9)
+
+if we got at the field, c_ip mean that there are 2 ip that are served by the webserver.
+![image](https://github.com/popipo74/SplunkLearning/assets/46301752/d73f39a9-df56-44a0-9db7-3b8109c1f6b4)
