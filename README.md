@@ -1,5 +1,22 @@
 # SplunkLearning
 
+I just access it via imreallynotbatman.com
+
+need to know what data u had.
+
+most important thing to investigate in splunk is the search & Reporting
+
+the most usefull is sourcetypes.
+addon for log windows. much more simple info from wineventlog
+
+fgt stand for log from fortigate
+
+iis is for microsft webserver
+
+syslog for the splunk server itself
+
+index="botsv1" stand for location
+
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/b4257874-08da-4147-a3b2-a36a0cdd482d)
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/1143655b-b759-4b48-9bab-9147f3201208)
 
