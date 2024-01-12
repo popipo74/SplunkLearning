@@ -32,3 +32,6 @@ index="botsv1" stand for location
 bassically it mean that the 40.80.148.42	is performing web vulnerablity on imnotreallyabatman.com 192.168.250.70		
 usually web vulnerability scanner will determine in it header it is performicne the activity.
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/7db03dbc-6ec1-487e-bbd9-e44b6f72efa1)
+
+if we show it in raw text
+now we identified that attacker is 40.80.148.42 while the webserver imnotreallyabatman is 192.168.250.70
