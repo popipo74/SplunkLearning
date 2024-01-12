@@ -12,8 +12,16 @@ Here are some key sourcetypes and their corresponding sources:
 - **iis**: Microsoft web server logs
 - **syslog**: Logs from the Splunk server itself
 - **suricatar**: alert from the intrusion detection system
-- 
+  
 When searching in Splunk, the `index="botsv1"` term signifies a specific location.
+
+
+to search it is better to use field = value. search for all mean splunk will use a lot of resources
+
+the lab excercise Boss of the SOC from splunk team is use in this lab.
+
+we have been task to as security analyst to protect and defend Wayne Enterprise
+
 
 The following images display the types of data available, along with their associated hosts:
 
@@ -33,3 +41,6 @@ In essence, this command reveals that IP address 40.80.148.42 is performing a we
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/7db03dbc-6ec1-487e-bbd9-e44b6f72efa1)
 
 Examining the raw text, we identify the attacker as 40.80.148.42, targeting the web server imnotreallyabatman at 192.168.250.70.
+
+based on the event happening we can make sure that imreallynotbatman.com is a webserver and it is using Joomla application and performing web vulnerability scanning.
+![image](https://github.com/popipo74/SplunkLearning/assets/46301752/bae96ba9-b3b7-43a7-a013-f7677fe2f0b9)
