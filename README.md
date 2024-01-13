@@ -50,3 +50,12 @@ usually the software will mark on the src_headers to shown itself.
 
 if we got at the field, c_ip mean that there are 2 ip that are served by the webserver.
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/d73f39a9-df56-44a0-9db7-3b8109c1f6b4)
+
+For finding the file, we need to know what network from the webserver to the network. so we using c_ip=192.168.250.70 to specify the network is outbound from the server.
+![image](https://github.com/popipo74/SplunkLearning/assets/46301752/e121faa3-0da0-4705-a94d-d03f19241e4d)
+
+by using below command, we can specify which table/log are requested from the webserver.
+sourcetype="stream:http" c_ip="192.168.250.70"
+
+based on the raw file below, we can identifier the file downloaded. the address of the attacker malicious server to retrived the file.
+![image](https://github.com/popipo74/SplunkLearning/assets/46301752/ef2227d8-0902-477a-8f24-25d8d4a75549)
