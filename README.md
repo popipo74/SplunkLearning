@@ -1,6 +1,7 @@
 # Splunk Learning
 
 Access the Splunk environment via [https://splunk.samsclass.info](https://splunk.samsclass.info), hosted by Sam https://samsclass.info/50/proj/botsv1.htm.
+The question is based on cyberdefend  Boss Of The SOC v1 Blue Team Lab Category: Threat Hunting by Splunk team
 
 To understand the available data, it's crucial to explore the Search & Reporting functionality within Splunk.
 
@@ -69,8 +70,7 @@ based on the raw file below, we can identifier the file downloaded. the address 
 
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/a7dc4f8e-5dcc-4a29-8e88-b02bffc1bd1b)
 
-Flowchart on how this attack is performed
-![image](https://github.com/popipo74/SplunkLearning/assets/46301752/6ea188f4-7089-4cc1-a1b1-3bdc9991786f)
-
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/c583637f-b36f-48e9-ac2f-1a5ef54180ee)
 
+Flowchart on how this attack is performed
+![image](https://github.com/popipo74/SplunkLearning/assets/46301752/6ea188f4-7089-4cc1-a1b1-3bdc9991786f)
