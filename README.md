@@ -99,7 +99,14 @@ sourcetype="stream:http"  *.exe imreallynotbatman.com c_ip="40.80.148.42"
 for finding specific MD5 value, we need sysmon sourcetype. sysmon is much simple window event log.
 we determine eventcode=1 because it is the process cretion event id in sysmon. then we mentioned commandline to show only the name of the executable.
 
+![image](https://github.com/popipo74/SplunkLearning/assets/46301752/b23f53c5-fd32-4b0a-a42a-e109d2881104)
+
 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational EventCode=1 CommandLine="<name of executable>"
 
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/282c76b9-247b-4034-b7d3-e123e19f449e)
+
+we will scan the malicious server ip address using virus total. under relation, pick the suspicious file name. and we can see it sha256
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/8124cc71-3d78-4e89-912b-3d40ae3b5df0)
+![image](https://github.com/popipo74/SplunkLearning/assets/46301752/c2db9b63-b10b-4fdb-b24b-4ace40d33ee3)
+![image](https://github.com/popipo74/SplunkLearning/assets/46301752/a63307d5-c2ec-484e-847e-18c386e3ea6d)
+![image](https://github.com/popipo74/SplunkLearning/assets/46301752/7605f3e1-9a59-431e-9378-f091d849e721)
