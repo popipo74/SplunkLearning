@@ -88,7 +88,10 @@ sourcetype="stream:http" c_ip="23.22.63.114" http_method=POST  "passwd=" "userna
 Then we can identify that there is attempted bruteforce by 23.22.63.114
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/e1e7e595-3115-4ba8-bd4a-72365ac59279)
 
-We can determined the executable file by search .exe file.
+We can determined the executable file by search .exe file. this mean that after the server has been infiltrate. the attacker control the server and requesting the file from malicious server.
 sourcetype="stream:http"  *.exe imreallynotbatman.com c_ip="40.80.148.42"
+
+
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/a2181ab2-13ee-48aa-8aa2-14c0b5b5a4d1)
+![image](https://github.com/popipo74/SplunkLearning/assets/46301752/36a53848-bfa5-4df8-8a04-02e175a2b36d)
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/0b7e045e-b661-4734-a1ea-771b82c57d1a)
