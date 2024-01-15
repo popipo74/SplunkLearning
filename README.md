@@ -74,3 +74,13 @@ based on the raw file below, we can identifier the file downloaded. the address 
 
 Flowchart on how this attack is performed
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/6ea188f4-7089-4cc1-a1b1-3bdc9991786f)
+
+In order to identify brute force attack, we specify the log by picking http method post. this is because in web development we use post method to send the credential to the server in a secure way( we dont expose the credential in URl).
+Then, we specify the word passwd & username because it is the variable for the credential.
+
+sourcetype="stream:http" c_ip="23.22.63.114" http_method=POST  "passwd=" "username="
+![image](https://github.com/popipo74/SplunkLearning/assets/46301752/55cfe648-218e-4649-aea2-8088405b45eb)
+![image](https://github.com/popipo74/SplunkLearning/assets/46301752/e1e7e595-3115-4ba8-bd4a-72365ac59279)
+
+sourcetype="stream:http" c_ip="23.22.63.114" http_method=POST  "passwd=" "username=" | table_time form_data
+![image](https://github.com/popipo74/SplunkLearning/assets/46301752/b4f6a387-2bbc-4bcb-8cbb-19e7979745c7)
