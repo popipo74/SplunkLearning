@@ -80,7 +80,10 @@ Then, we specify the word passwd & username because it is the variable for the c
 
 sourcetype="stream:http" c_ip="23.22.63.114" http_method=POST  "passwd=" "username="
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/55cfe648-218e-4649-aea2-8088405b45eb)
-![image](https://github.com/popipo74/SplunkLearning/assets/46301752/e1e7e595-3115-4ba8-bd4a-72365ac59279)
 
+The result show many table that contain "passwd=" and "username=". Hence, we insert into the field "table_time form_data" to simplify the table showed.
 sourcetype="stream:http" c_ip="23.22.63.114" http_method=POST  "passwd=" "username=" | table_time form_data
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/b4f6a387-2bbc-4bcb-8cbb-19e7979745c7)
+
+Then we can identify that there is attempted bruteforce by 23.22.63.114
+![image](https://github.com/popipo74/SplunkLearning/assets/46301752/e1e7e595-3115-4ba8-bd4a-72365ac59279)
