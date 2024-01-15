@@ -95,3 +95,11 @@ sourcetype="stream:http"  *.exe imreallynotbatman.com c_ip="40.80.148.42"
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/a2181ab2-13ee-48aa-8aa2-14c0b5b5a4d1)
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/36a53848-bfa5-4df8-8a04-02e175a2b36d)
 ![image](https://github.com/popipo74/SplunkLearning/assets/46301752/0b7e045e-b661-4734-a1ea-771b82c57d1a)
+
+for finding specific MD5 value, we need sysmon sourcetype. sysmon is much simple window event log.
+we determine eventcode=1 because it is the process cretion event id in sysmon. then we mentioned commandline to show only the name of the executable.
+
+sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational EventCode=1 CommandLine="<name of executable>"
+
+![image](https://github.com/popipo74/SplunkLearning/assets/46301752/282c76b9-247b-4034-b7d3-e123e19f449e)
+![image](https://github.com/popipo74/SplunkLearning/assets/46301752/8124cc71-3d78-4e89-912b-3d40ae3b5df0)
